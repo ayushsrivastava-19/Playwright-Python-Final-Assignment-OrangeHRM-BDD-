@@ -1,0 +1,10 @@
+{
+  "admin_user": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "ess_user1": {
+    "username": "ravimb1",
+    "password": "essRaviMB1"
+  }
+}
