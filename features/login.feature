@@ -24,3 +24,5 @@ Feature: OrangeHRM Login Functionality
       | username | password |
       | adminnn  | xxxxxxxx |
       | aadmin   | admin123 |
+      | Admin    | aadmin45 |
+
