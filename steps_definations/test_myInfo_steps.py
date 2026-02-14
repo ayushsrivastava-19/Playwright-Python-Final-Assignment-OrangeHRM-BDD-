@@ -22,3 +22,10 @@ def click_on_My_Info_tab(page):
 @then("the user should be redirected to the Personal Details section")
 def verify_personal_details(page):
     expect(page).to_have_url(re.compile(r".*PersonalDetails.*"))
+
+@then(parsers.parse('the user should be able to edit fields license expiry "{le}" and Nationality'))
+def edit_fields(page, le):
+    page = MyInfoPage(page)
+    page.personalDetails_licenseExpiryDate.fill(le)
+    page.select_nationality_dropdown()
+    expect(page.personalDetails_licenseExpiryDate).to_have_value(le)
